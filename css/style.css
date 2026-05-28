@@ -1,0 +1,208 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- MENU DE NAVEGAÇÃO --- */
+.menu-navegacao, .menu {
+    background-color: #1b4332; /* Verde escuro industrial */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.menu-navegacao a, .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.menu-navegacao a:hover, .menu a:hover {
+    background-color: #2d6a4f;
+    color: #d8f3dc;
+}
+
+.menu-navegacao a.ativo, .menu a.ativo {
+    background-color: #52b788; /* Verde destaque para a página ativa */
+    color: #1b4332;
+}
+
+/* --- CABEÇALHO (HEADER) --- */
+header {
+    background: linear-gradient(135deg, #1b4332 0%, #081c15 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+header h1, header .tit {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #52b788;
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #b7e4c7;
+}
+
+.imagem, .emoji {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.imagem img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* --- CONTEÚDO PRINCIPAL (MAIN & SECTIONS) --- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #1b4332;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #52b788;
+    padding-bottom: 8px;
+}
+
+section p {
+    font-size: 1.05rem;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+/* --- ESTILO DAS LISTAS (VALORES NA PÁGINA SOBRE) --- */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ul li span {
+    color: #52b788;
+    font-weight: bold;
+}
+
+/* --- INTERATIVIDADE: BOTÃO E ÁREA DA AÇÃO --- */
+#mostraAcao {
+    background-color: #e9f5ed;
+    border-left: 5px solid #52b788;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-weight: 500;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: #52b788;
+    color: #1b4332;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #40916c;
+    color: white;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* --- FORMULÁRIO --- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.formulario label {
+    font-weight: 600;
+    color: #1b4332;
+}
+
+.formulario input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.formulario input[type="text"]:focus {
+    border-color: #52b788;
+    box-shadow: 0 0 0 3px rgba(82, 183, 136, 0.2);
+}
+
+/* --- RODAPÉ (FOOTER) --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    background-color: #081c15;
+    color: #b7e4c7;
+    font-size: 0.9rem;
+}
+
+footer strong {
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
