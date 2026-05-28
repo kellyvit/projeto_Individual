@@ -44,3 +44,10 @@ function mostrarProximacao() {
         indiceAtual = 0;
     }
 }
+// Faz a imagem sem fundo girar assim que a página carregar
+document.addEventListener("DOMContentLoaded", () => {
+    const imagemSustentavel = document.querySelector('.img\\.acoes img');
+    if (imagemSustentavel) {
+        imagemSustentavel.classList.add('imagem-rodando');
+    }
+});;

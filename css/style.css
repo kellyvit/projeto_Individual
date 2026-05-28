@@ -14,7 +14,7 @@ body {
 
 /* --- MENU DE NAVEGAÇÃO --- */
 .menu-navegacao, .menu {
-    background-color: #1b4332; /* Verde escuro industrial */
+    background-color: #1b4332; /* Verde escuro*/
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -78,7 +78,6 @@ header p {
     height: auto;
 }
 
-/* --- CONTEÚDO PRINCIPAL (MAIN & SECTIONS) --- */
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -86,6 +85,8 @@ main {
 }
 
 section {
+    border-left: 5px solid #ff7b00;
+    padding-left: 15px;
     background-color: white;
     padding: 30px;
     margin-bottom: 30px;
@@ -105,8 +106,6 @@ section p {
     color: #4a5568;
     margin-bottom: 15px;
 }
-
-/* --- ESTILO DAS LISTAS (VALORES NA PÁGINA SOBRE) --- */
 ul {
     list-style: none;
     padding-left: 0;
@@ -124,8 +123,6 @@ ul li span {
     color: #52b788;
     font-weight: bold;
 }
-
-/* --- INTERATIVIDADE: BOTÃO E ÁREA DA AÇÃO --- */
 #mostraAcao {
     background-color: #e9f5ed;
     border-left: 5px solid #52b788;
@@ -161,8 +158,6 @@ button:hover {
 button:active {
     transform: translateY(0);
 }
-
-/* --- FORMULÁRIO --- */
 .formulario {
     display: flex;
     flex-direction: column;
@@ -205,4 +200,31 @@ footer strong {
 
 footer p {
     margin-bottom: 5px;
+}
+/* Configura o movimento de rotação (360 graus) */
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Classe que faz a imagem girar continuamente */
+.imagem-rodando {
+    animation: girar 15s linear infinite; /* 15s deixa o giro bem calmo e profissional */
+}
+
+/* Garante que a sua div centralize a imagem na tela */
+.img\.acoes {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.img\.acoes img {
+    max-width: 100%;
+    width: 250px; /* Tamanho excelente para imagens no cabeçalho */
+    height: auto;
 }
